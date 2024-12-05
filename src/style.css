@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1c1c1c; /* Dark background for a gaming vibe */
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background-image: url('https://www.transparenttextures.com/patterns/black-tile.png'); /* Subtle texture for background */
+  background-size: cover;
+}
+
+.game-container {
+  width: 80%; /* 80% of the viewport width */
+  height: 70%; /* 70% of the viewport height */
+  max-width: 500px; /* Maximum width constraint */
+  max-height: 600px; /* Maximum height constraint */
+  min-width: 300px; /* Minimum width to ensure visibility */
+  min-height: 400px; /* Minimum height to ensure visibility */
+  border: 3px solid #ff4500; /* Gaming-style orange border */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 0 20px rgba(255, 69, 0, 0.8); /* Glowing effect around the container */
+  position: relative;
+  overflow: hidden;
+  background-color: #20232a;
+  cursor: pointer;
+}
+
+.game-header {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 32px;
+  font-weight: bold;
+  color: #ff4500; /* Orange color for the header */
+  text-shadow: 2px 2px 10px rgba(255, 69, 0, 0.8); /* Glowing text effect */
+  z-index: 10;
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8); /* Add shadow to the ball for depth */
+}
